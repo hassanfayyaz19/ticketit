@@ -2,7 +2,7 @@
 
 namespace Hassanfayyaz19\Ticketit\Models;
 
-use App\User;
+use App\Models\User;
 use Auth;
 
 class Agent extends User

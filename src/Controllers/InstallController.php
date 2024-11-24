@@ -3,7 +3,7 @@
 namespace Hassanfayyaz19\Ticketit\Controllers;
 
 use Illuminate\Routing\Controller;
-use App\User;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;

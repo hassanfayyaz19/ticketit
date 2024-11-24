@@ -57,7 +57,7 @@ Step 2. After install, you have to add this line on your `config/app.php` in Ser
 Hassanfayyaz19\Ticketit\TicketitServiceProvider::class,
 ```
 
-Step 3. [Check if App\User exists](https://github.com/thekordy/ticketit/wiki/Make-sure-that-App%5CUser-exists)
+Step 3. [Check if App\Models\User exists](https://github.com/thekordy/ticketit/wiki/Make-sure-that-App%5CUser-exists)
 
 Step 4. Make sure you have [authentication](https://laravel.com/docs/5.4/authentication#introduction) set up. In 5.2+, you can use `php artisan make:auth`
 
