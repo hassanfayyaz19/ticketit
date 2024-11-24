@@ -2,7 +2,7 @@
 
 namespace Hassanfayyaz19\Ticketit\Controllers;
 
-use Illuminate\Routing\Controller;
+
 use Hassanfayyaz19\Ticketit\Models\Agent;
 use Hassanfayyaz19\Ticketit\Models\Category;
 use Hassanfayyaz19\Ticketit\Models\Ticket;

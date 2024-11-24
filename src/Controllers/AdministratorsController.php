@@ -2,12 +2,12 @@
 
 namespace Hassanfayyaz19\Ticketit\Controllers;
 
-//use Illuminate\Routing\Controller;
+//
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use HassanFayyaz19\Ticketit\Models\Agent;
 use Hassanfayyaz19\Ticketit\Models\Setting;
-use Illuminate\Routing\Controller;
+
 
 class AdministratorsController extends Controller
 {

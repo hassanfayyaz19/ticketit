@@ -2,7 +2,7 @@
 
 namespace Hassanfayyaz19\Ticketit\Controllers;
 
-use Illuminate\Routing\Controller;
+
 use Illuminate\Http\Request;
 use Hassanfayyaz19\Ticketit\Models;
 

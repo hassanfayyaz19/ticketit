@@ -2,7 +2,7 @@
 
 namespace Hassanfayyaz19\Ticketit\Controllers;
 
-use Illuminate\Routing\Controller;
+
 use Illuminate\Support\Facades\Mail;
 use Hassanfayyaz19\Ticketit\Helpers\LaravelVersion;
 use Hassanfayyaz19\Ticketit\Models\Comment;

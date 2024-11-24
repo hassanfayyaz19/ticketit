@@ -2,8 +2,6 @@
 
 namespace Hassanfayyaz19\Ticketit\Controllers;
 
-use Illuminate\Routing\Controller;
-use Cache;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Hassanfayyaz19\Ticketit\Helpers\LaravelVersion;
@@ -12,6 +10,7 @@ use Hassanfayyaz19\Ticketit\Models\Agent;
 use Hassanfayyaz19\Ticketit\Models\Category;
 use Hassanfayyaz19\Ticketit\Models\Setting;
 use Hassanfayyaz19\Ticketit\Models\Ticket;
+use Illuminate\Support\Facades\Cache;
 
 class TicketsController extends Controller
 {
@@ -136,7 +135,7 @@ class TicketsController extends Controller
     /**
      * Display a listing of active tickets related to user.
      *
-     * @return Response
+     * @return
      */
     public function index()
     {
@@ -148,7 +147,7 @@ class TicketsController extends Controller
     /**
      * Display a listing of completed tickets related to user.
      *
-     * @return Response
+     * @return
      */
     public function indexComplete()
     {
@@ -190,7 +189,7 @@ class TicketsController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return Response
+     * @return
      */
     public function create()
     {
@@ -240,7 +239,7 @@ class TicketsController extends Controller
      *
      * @param int $id
      *
-     * @return Response
+     * @return
      */
     public function show($id)
     {
@@ -271,7 +270,7 @@ class TicketsController extends Controller
      * @param Request $request
      * @param int     $id
      *
-     * @return Response
+     * @return
      */
     public function update(Request $request, $id)
     {
@@ -312,7 +311,7 @@ class TicketsController extends Controller
      *
      * @param int $id
      *
-     * @return Response
+     * @return
      */
     public function destroy($id)
     {
@@ -330,7 +329,7 @@ class TicketsController extends Controller
      *
      * @param int $id
      *
-     * @return Response
+     * @return
      */
     public function complete($id)
     {
@@ -359,7 +358,7 @@ class TicketsController extends Controller
      *
      * @param int $id
      *
-     * @return Response
+     * @return
      */
     public function reopen($id)
     {
