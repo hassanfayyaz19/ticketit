@@ -1,8 +1,8 @@
 <?php
 
-namespace Kordy\Ticketit\Controllers;
+namespace Hassanfayyaz19\Ticketit\Controllers;
 
-use App\Http\Controllers\Controller;
+use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Str;
 

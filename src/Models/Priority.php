@@ -1,6 +1,6 @@
 <?php
 
-namespace Kordy\Ticketit\Models;
+namespace Hassanfayyaz19\Ticketit\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -24,6 +24,6 @@ class Priority extends Model
      */
     public function tickets()
     {
-        return $this->hasMany('Kordy\Ticketit\Models\Ticket', 'priority_id');
+        return $this->hasMany('Hassanfayyaz19\Ticketit\Models\Ticket', 'priority_id');
     }
 }

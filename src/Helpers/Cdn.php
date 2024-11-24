@@ -1,6 +1,6 @@
 <?php
 
-namespace Kordy\Ticketit\Helpers;
+namespace Hassanfayyaz19\Ticketit\Helpers;
 
 /**
  * This file containes the version of different external JS and CSS libraries

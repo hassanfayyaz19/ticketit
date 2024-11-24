@@ -1,6 +1,6 @@
 <?php
 
-namespace Kordy\Ticketit;
+namespace Hassanfayyaz19\Ticketit;
 
 use Collective\Html\FormFacade as CollectiveForm;
 use Illuminate\Support\Facades\DB;
@@ -8,14 +8,14 @@ use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
-use Kordy\Ticketit\Console\Htmlify;
-use Kordy\Ticketit\Controllers\InstallController;
-use Kordy\Ticketit\Controllers\NotificationsController;
-use Kordy\Ticketit\Helpers\LaravelVersion;
-use Kordy\Ticketit\Models\Comment;
-use Kordy\Ticketit\Models\Setting;
-use Kordy\Ticketit\Models\Ticket;
-use Kordy\Ticketit\ViewComposers\TicketItComposer;
+use Hassanfayyaz19\Ticketit\Console\Htmlify;
+use Hassanfayyaz19\Ticketit\Controllers\InstallController;
+use Hassanfayyaz19\Ticketit\Controllers\NotificationsController;
+use Hassanfayyaz19\Ticketit\Helpers\LaravelVersion;
+use Hassanfayyaz19\Ticketit\Models\Comment;
+use Hassanfayyaz19\Ticketit\Models\Setting;
+use Hassanfayyaz19\Ticketit\Models\Ticket;
+use Hassanfayyaz19\Ticketit\ViewComposers\TicketItComposer;
 
 class TicketitServiceProvider extends ServiceProvider
 {
@@ -133,17 +133,17 @@ class TicketitServiceProvider extends ServiceProvider
             Route::get('/tickets-install', [
                 'middleware' => $authMiddleware,
                 'as'         => 'tickets.install.index',
-                'uses'       => 'Kordy\Ticketit\Controllers\InstallController@index',
+                'uses'       => 'Hassanfayyaz19\Ticketit\Controllers\InstallController@index',
             ]);
             Route::post('/tickets-install', [
                 'middleware' => $authMiddleware,
                 'as'         => 'tickets.install.setup',
-                'uses'       => 'Kordy\Ticketit\Controllers\InstallController@setup',
+                'uses'       => 'Hassanfayyaz19\Ticketit\Controllers\InstallController@setup',
             ]);
             Route::get('/tickets-upgrade', [
                 'middleware' => $authMiddleware,
                 'as'         => 'tickets.install.upgrade',
-                'uses'       => 'Kordy\Ticketit\Controllers\InstallController@upgrade',
+                'uses'       => 'Hassanfayyaz19\Ticketit\Controllers\InstallController@upgrade',
             ]);
             Route::get('/tickets', function () {
                 return redirect()->route('tickets.install.index');

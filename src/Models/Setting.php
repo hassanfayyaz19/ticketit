@@ -1,11 +1,11 @@
 <?php
 
-namespace Kordy\Ticketit\Models;
+namespace Hassanfayyaz19\Ticketit\Models;
 
 use Cache;
 use Illuminate\Database\Eloquent\Model;
-use Kordy\Ticketit\Models\Setting as Table;
-use Kordy\Ticketit\Helpers\LaravelVersion;
+use Hassanfayyaz19\Ticketit\Models\Setting as Table;
+use Hassanfayyaz19\Ticketit\Helpers\LaravelVersion;
 
 class Setting extends Model
 {

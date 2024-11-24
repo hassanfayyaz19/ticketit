@@ -54,7 +54,7 @@ composer require 'kordy/ticketit:0.*'
 
 Step 2. After install, you have to add this line on your `config/app.php` in Service Providers section (1-2 minutes).
 ```php
-Kordy\Ticketit\TicketitServiceProvider::class,
+Hassanfayyaz19\Ticketit\TicketitServiceProvider::class,
 ```
 
 Step 3. [Check if App\User exists](https://github.com/thekordy/ticketit/wiki/Make-sure-that-App%5CUser-exists)

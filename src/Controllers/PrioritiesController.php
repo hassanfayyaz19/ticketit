@@ -1,12 +1,12 @@
 <?php
 
-namespace Kordy\Ticketit\Controllers;
+namespace Hassanfayyaz19\Ticketit\Controllers;
 
-use App\Http\Controllers\Controller;
+use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
-use Kordy\Ticketit\Models\Priority;
-use Kordy\Ticketit\Helpers\LaravelVersion;
+use Hassanfayyaz19\Ticketit\Models\Priority;
+use Hassanfayyaz19\Ticketit\Helpers\LaravelVersion;
 
 class PrioritiesController extends Controller
 {
@@ -57,7 +57,7 @@ class PrioritiesController extends Controller
 
         \Cache::forget('ticketit::priorities');
 
-        return redirect()->action('\Kordy\Ticketit\Controllers\PrioritiesController@index');
+        return redirect()->action('\Hassanfayyaz19\Ticketit\Controllers\PrioritiesController@index');
     }
 
     /**
@@ -108,7 +108,7 @@ class PrioritiesController extends Controller
 
         \Cache::forget('ticketit::priorities');
 
-        return redirect()->action('\Kordy\Ticketit\Controllers\PrioritiesController@index');
+        return redirect()->action('\Hassanfayyaz19\Ticketit\Controllers\PrioritiesController@index');
     }
 
     /**
@@ -128,6 +128,6 @@ class PrioritiesController extends Controller
 
         \Cache::forget('ticketit::priorities');
 
-        return redirect()->action('\Kordy\Ticketit\Controllers\PrioritiesController@index');
+        return redirect()->action('\Hassanfayyaz19\Ticketit\Controllers\PrioritiesController@index');
     }
 }

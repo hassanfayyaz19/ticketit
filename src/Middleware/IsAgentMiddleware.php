@@ -1,10 +1,10 @@
 <?php
 
-namespace Kordy\Ticketit\Middleware;
+namespace Hassanfayyaz19\Ticketit\Middleware;
 
 use Closure;
-use Kordy\Ticketit\Models\Agent;
-use Kordy\Ticketit\Models\Setting;
+use Hassanfayyaz19\Ticketit\Models\Agent;
+use Hassanfayyaz19\Ticketit\Models\Setting;
 
 class IsAgentMiddleware
 {

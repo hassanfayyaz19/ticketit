@@ -1,11 +1,11 @@
 <?php
 
-namespace Kordy\Ticketit\Middleware;
+namespace Hassanfayyaz19\Ticketit\Middleware;
 
 use Closure;
-use Kordy\Ticketit\Helpers\LaravelVersion;
-use Kordy\Ticketit\Models\Agent;
-use Kordy\Ticketit\Models\Setting;
+use Hassanfayyaz19\Ticketit\Helpers\LaravelVersion;
+use Hassanfayyaz19\Ticketit\Models\Agent;
+use Hassanfayyaz19\Ticketit\Models\Setting;
 
 class ResAccessMiddleware
 {

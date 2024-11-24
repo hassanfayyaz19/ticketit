@@ -1,13 +1,13 @@
 <?php
 
-namespace Kordy\Ticketit\Controllers;
+namespace Hassanfayyaz19\Ticketit\Controllers;
 
-use App\Http\Controllers\Controller;
+use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
-use Kordy\Ticketit\Models\Agent;
-use Kordy\Ticketit\Models\Setting;
-use Kordy\Ticketit\Helpers\LaravelVersion;
+use Hassanfayyaz19\Ticketit\Models\Agent;
+use Hassanfayyaz19\Ticketit\Models\Setting;
+use Hassanfayyaz19\Ticketit\Helpers\LaravelVersion;
 
 class AgentsController extends Controller
 {
@@ -42,7 +42,7 @@ class AgentsController extends Controller
 
         Session::flash('status', trans('ticketit::lang.agents-are-added-to-agents', ['names' => $agents_names]));
 
-        return redirect()->action('\Kordy\Ticketit\Controllers\AgentsController@index');
+        return redirect()->action('\Hassanfayyaz19\Ticketit\Controllers\AgentsController@index');
     }
 
     public function update($id, Request $request)
@@ -51,7 +51,7 @@ class AgentsController extends Controller
 
         Session::flash('status', trans('ticketit::lang.agents-joined-categories-ok'));
 
-        return redirect()->action('\Kordy\Ticketit\Controllers\AgentsController@index');
+        return redirect()->action('\Hassanfayyaz19\Ticketit\Controllers\AgentsController@index');
     }
 
     public function destroy($id)
@@ -60,7 +60,7 @@ class AgentsController extends Controller
 
         Session::flash('status', trans('ticketit::lang.agents-is-removed-from-team', ['name' => $agent->name]));
 
-        return redirect()->action('\Kordy\Ticketit\Controllers\AgentsController@index');
+        return redirect()->action('\Hassanfayyaz19\Ticketit\Controllers\AgentsController@index');
     }
 
     /**

@@ -1,8 +1,8 @@
 <?php
 
-namespace Kordy\Ticketit\Helpers;
+namespace Hassanfayyaz19\Ticketit\Helpers;
 
-use Kordy\Ticketit\Models\Setting;
+use Hassanfayyaz19\Ticketit\Models\Setting;
 use Illuminate\Support\Arr;
 
 class EditorLocale

@@ -1,12 +1,13 @@
 <?php
 
-namespace Kordy\Ticketit\Controllers;
+namespace Hassanfayyaz19\Ticketit\Controllers;
 
-use App\Http\Controllers\Controller;
+//use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
-use Kordy\Ticketit\Models\Agent;
-use Kordy\Ticketit\Models\Setting;
+use HassanFayyaz19\Ticketit\Models\Agent;
+use Hassanfayyaz19\Ticketit\Models\Setting;
+use Illuminate\Routing\Controller;
 
 class AdministratorsController extends Controller
 {
@@ -31,7 +32,7 @@ class AdministratorsController extends Controller
 
         Session::flash('status', trans('ticketit::lang.administrators-are-added-to-administrators', ['names' => $administrators_names]));
 
-        return redirect()->action('\Kordy\Ticketit\Controllers\AdministratorsController@index');
+        return redirect()->action('\Hassanfayyaz19\Ticketit\Controllers\AdministratorsController@index');
     }
 
     public function update($id, Request $request)
@@ -40,7 +41,7 @@ class AdministratorsController extends Controller
 
         Session::flash('status', trans('ticketit::lang.administrators-joined-categories-ok'));
 
-        return redirect()->action('\Kordy\Ticketit\Controllers\AdministratorsController@index');
+        return redirect()->action('\Hassanfayyaz19\Ticketit\Controllers\AdministratorsController@index');
     }
 
     public function destroy($id)
@@ -49,7 +50,7 @@ class AdministratorsController extends Controller
 
         Session::flash('status', trans('ticketit::lang.administrators-is-removed-from-team', ['name' => $administrator->name]));
 
-        return redirect()->action('\Kordy\Ticketit\Controllers\AdministratorsController@index');
+        return redirect()->action('\Hassanfayyaz19\Ticketit\Controllers\AdministratorsController@index');
     }
 
     /**

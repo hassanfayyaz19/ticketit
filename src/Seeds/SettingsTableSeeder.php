@@ -1,10 +1,10 @@
 <?php
 
-namespace Kordy\Ticketit\Seeds;
+namespace Hassanfayyaz19\Ticketit\Seeds;
 
 use Illuminate\Database\Seeder;
-use Kordy\Ticketit\Helpers\LaravelVersion;
-use Kordy\Ticketit\Models\Setting;
+use Hassanfayyaz19\Ticketit\Helpers\LaravelVersion;
+use Hassanfayyaz19\Ticketit\Models\Setting;
 
 class SettingsTableSeeder extends Seeder
 {
